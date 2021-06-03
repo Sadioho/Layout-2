@@ -1,23 +1,23 @@
-// .pading-top-small{
-//     padding-top: 2rem;
-// }
-// .pading-top-medium{
-//     padding-top: 4rem;
-// }
-// .pading-top-lager{
-//     padding-top: 6rem;
-// }
-
 .padding-gutters {
   padding: 7.5rem 0rem;
 }
+.padding-gutters-small {
+  padding: 2.5rem 0rem;
+}
 
-.margin-top-3 {
+.mr-top-3 {
+  margin-top: 3rem;
+}
+
+.display-inline-block {
   display: inline-block;
 }
 
-.justify-content-center{
-    justify-content: center;
+.justify-content-center {
+  justify-content: center;
+}
+.justify-content-between {
+  justify-content: space-between;
 }
 
 .flex-end {
@@ -42,6 +42,15 @@
 .align-self-end {
   align-self: flex-end;
 }
-.height-25rem{
-    height: 25rem;
+.height-25rem {
+  height: 25rem;
+}
+
+.dflex-center {
+  display: flex;
+  justify-content: center;
+}
+.dflex-end {
+  display: flex;
+  justify-content: end;
 }

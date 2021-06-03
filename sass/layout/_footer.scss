@@ -1,0 +1,50 @@
+.footer {
+  padding: 14rem 0;
+  background-color: $color-green-light;
+  margin-top: 7.5rem;
+  &__logo {
+    &-text {
+      margin: 2.8rem 0;
+      font-family: $font-family-josefin;
+      font-size: 2.4rem;
+      line-height: 3.6rem;
+      color: $color-grey-light-2;
+    }
+    &-icon {
+      display: flex;
+      &-1 {
+        padding: 0.9rem 1.1rem;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        background: linear-gradient(
+          180deg,
+          rgba(140, 181, 96, 1) 0%,
+          rgba(99, 157, 43, 1) 100%
+        );
+
+        &:not(:last-child) {
+          margin-right: 2rem;
+        }
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+  &__menu {
+    margin-top: 1rem;
+    &-list {
+      list-style: none;
+      margin-top: 4.5rem;
+      li {
+        &:not(:last-child) {
+          padding-bottom: 3.5rem;
+        }
+        a {
+          text-decoration: none;
+          color: $color-grey-light-2;
+        }
+      }
+    }
+  }
+}

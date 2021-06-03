@@ -1,5 +1,5 @@
 
-//
+
 
 
 margin trên dưới 150px
@@ -43,7 +43,7 @@ Browse
         row
             col
             col
-            col
+            col 
             col
         
 History of figo
@@ -55,7 +55,7 @@ History of figo
                 img
 
 
-Jestiomnials 
+Testiomnials 
     container
         heading
             row
