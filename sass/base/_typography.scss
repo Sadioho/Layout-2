@@ -4,6 +4,9 @@
     font-weight: bold;
     font-family: $font-family-josefin;
     line-height: 9rem;
+    @include respond(phone){
+        font-size: 6rem;
+    }
 }
  
 .heading-2{

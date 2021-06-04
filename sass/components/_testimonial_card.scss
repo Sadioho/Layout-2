@@ -3,6 +3,7 @@
   font-family: "Open Sans", sans-serif;
 //   padding: 1rem;
 
+
   &__text {
     background-color: $color-white;
     padding: 2.3rem 3.5rem;
@@ -32,6 +33,9 @@
   &__content {
     display: flex;
     align-items: center;
+    @include respond(phone){
+      justify-content: center;
+    }
     &-avatar {
       margin-right: 1.5rem;
     }

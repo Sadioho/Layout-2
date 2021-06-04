@@ -6,6 +6,9 @@
     transition: all .4s;
     cursor: pointer;
     position: relative;
+    @include respond(phone){
+        margin-top: 2rem;
+      }
     &__icon{
         margin-top: 2.5rem;
     }

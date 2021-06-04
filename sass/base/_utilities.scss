@@ -44,6 +44,9 @@
 }
 .height-25rem {
   height: 25rem;
+  @include respond(phone) {
+   height: auto;
+  }
 }
 
 .dflex-center {

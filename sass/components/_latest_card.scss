@@ -1,6 +1,15 @@
 .latest-card{
     text-align: start;
-    &__img{}
+    @include respond(phone){
+        margin-top: 5rem;
+    }
+    &__img{
+        img{
+            @include respond(phone){
+                width: 100%;
+            }
+        }
+    }
     &__content{
         &-title{
             font-family: $font-family-josefin;
