@@ -102,8 +102,16 @@
 .history {
   position: relative;
   text-align: center;
-  @include respond(tab-land){
+  @include respond(tab-land) {
     text-align: unset;
+  }
+  //bg
+  .bg-green-light {
+    background-color: $color-green-light;
+    margin-top: 5rem;
+    @include respond(tab-land) {
+      margin-top: unset;
+    }
   }
   &__leaves {
     position: absolute;
@@ -112,13 +120,11 @@
     z-index: -100;
   }
   &__img {
-    background-color: $color-green-light;
-    margin-top: 5rem;
-    @include respond(tab-land){
-      margin-top: unset;
-    }
     img {
       width: 100%;
+      @include respond(tab-port) {
+        width: unset;
+      }
     }
   }
 }

@@ -15,8 +15,10 @@ var parallaxInstances4 = new Parallax(scene4);
 var scene5 = document.getElementById("scene-5");
 var parallaxInstances5 = new Parallax(scene5);
 
-// var scene6 = document.getElementById("scene-6");
-// var parallaxInstances6 = new Parallax(scene6);
 
-// var scene7 = document.getElementById("scene-7");
-// var parallaxInstances7 = new Parallax(scene7);
+// scroll
+// $.addEventListener('scroll', function(){
+//     let header=document.querySelector("#sticky");
+//     window.screenY > 0 ? header.addClass("sticky") : null
+   
+// })

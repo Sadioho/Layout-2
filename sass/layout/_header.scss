@@ -1,7 +1,15 @@
 .header {
   position: relative;
-  padding: 2rem 0;
+  // padding: 2rem 0;
   overflow: hidden;
+
+&__top{
+  padding: 2rem 0;
+  // background-color: violet;
+  // background-color: $color-white;
+  // position: fixed;
+  // z-index: 5;
+}
 
   &__nav {
     display: none;

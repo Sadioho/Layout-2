@@ -5,7 +5,7 @@
   transition: all 0.4s;
   &__img {
     position: relative;
-    img{
+    img {
       width: 100%;
     }
     &-layout {
@@ -21,16 +21,36 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      svg {
+      display: flex;
+      &-1,&-2 {
+        margin: 0.2rem;
+        width: 40px;
+        height: 40px;
+        background-color: $color-white;
+        position: relative;
+        border-radius: .5rem;
+        transition: all .6s;
         cursor: pointer;
+        &:hover{
+          background-color: $color-green-dark;
+          color: $color-white;
+        }
+        svg {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+
       }
+      
     }
   }
 
   &__content {
     .heading-4 {
       line-height: unset;
-      margin: .5rem 0;
+      margin: 0.5rem 0;
     }
     &-price {
       margin: 1.5rem;
@@ -68,7 +88,7 @@
 
   &:hover {
     background-color: $color-white;
-    box-shadow: 0px 0px 22px 1px rgba(0,0,0,0.05);
+    box-shadow: 0px 0px 22px 1px rgba(0, 0, 0, 0.05);
     &::after {
       opacity: 1;
     }
@@ -78,8 +98,3 @@
     }
   }
 }
-
-
-
-
-
