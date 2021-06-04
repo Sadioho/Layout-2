@@ -4,9 +4,9 @@
 .padding-gutters-small {
   padding: 2.5rem 0rem;
 }
-
-.mr-top-3 {
-  margin-top: 3rem;
+// margin
+.mt-5 {
+  margin-top: 5rem;
 }
 
 .display-inline-block {
@@ -16,20 +16,16 @@
 .justify-content-center {
   justify-content: center;
 }
-.justify-content-between {
+.jus-sb {
   justify-content: space-between;
 }
 
-.flex-end {
-  justify-content: flex-end;
-}
+
 
 .text-center {
   text-align: center;
 }
-.item-stretch {
-  align-items: stretch;
-}
+
 
 .align-self-center {
   align-self: center;
@@ -43,9 +39,8 @@
   align-self: flex-end;
 }
 .height-25rem {
-  height: 25rem;
-  @include respond(phone) {
-   height: auto;
+  @include respond(tab-land) {
+    height: 25rem;
   }
 }
 
@@ -56,4 +51,36 @@
 .dflex-end {
   display: flex;
   justify-content: end;
+}
+
+
+// align item
+.ai-center{
+  align-items: center;
+}
+.ai-stretch {
+  align-items: stretch;
+}
+//order
+.order-2{
+  order:2;
+  background-color: $color-green-light;
+  margin-top: 5rem;
+  @include respond(tab-land){
+    order: unset;
+  margin-top: unset;
+
+  }
+}
+// padding 0
+.p-0{
+  padding: 0;
+}
+
+//btn 
+.jus-btn{
+  justify-content: center;
+  @include respond(tab-land){
+    justify-content: flex-end !important;
+  }
 }

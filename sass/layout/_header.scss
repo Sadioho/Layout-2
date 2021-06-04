@@ -1,34 +1,23 @@
 .header {
-  padding: 2rem;
-  margin-bottom: 7.5rem;
-  
+  position: relative;
+  padding: 2rem 0;
+  overflow: hidden;
 
-  .row:last-child {
-    margin-top: 5.5rem;
-  }
-  @include respond(phone) {
-    margin: auto;
-    text-align: center;
-    margin: 0 1rem;
-    overflow: hidden;
-    
-  }
   &__nav {
+    display: none;
+    @include respond(tab-land) {
+      display: block;
+    }
     &-item {
       display: flex;
       justify-content: space-around;
       align-items: center;
-
       list-style: none;
-
       font-size: 2rem;
       font-family: $font-family-josefin;
       font-weight: 500;
-
       color: $color-grey-light;
-
       cursor: pointer;
-
       li {
         &:hover {
           color: $color-black;
@@ -38,64 +27,55 @@
     }
   }
   &__content {
+    margin-top: 10rem;
     padding: 0.3rem;
+    text-align: center;
+    @include respond(tab-port) {
+      text-align: unset;
+    }
     &-text {
       font-family: $font-family-poppins;
       font-size: 2rem;
       font-weight: 500;
       line-height: 3.6rem;
-
       margin: 3.5rem 0;
-
       color: $color-grey-light-2;
     }
     &-form {
       input {
         font-family: $font-family-poppins;
         font-size: 1.8rem;
-
         background-color: $color-white;
-
         padding: 1.6rem 2rem;
-
         margin-right: 2rem;
-        width: 35rem;
-
+        width: 100%;
         box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.07);
         border-radius: 0.5rem;
         outline: none;
         border: none;
-
-        cursor: pointer;
-
+        margin-bottom: 2rem;
         &::placeholder {
           opacity: 0.6;
         }
-        @include respond(phone) {
-          margin: 0;
-          width: 100%;
-    
+        @include respond(tab-port) {
+          width: 33rem;
         }
       }
     }
   }
-  &__img {
-
-
-    img {
-      @include respond(phone) {
-        position: absolute;
-        top: 45%;
-        left: -5%;
-        transform: translate(-50%,-50%);
-        z-index: -10;
-  
-      }
-    }
-  }
-  .btn {
+  &__ab {
+    position: absolute;
+    top: 0;
+    left: -25rem;
+    z-index: -1;
     @include respond(phone) {
-      margin-top: 1rem;
+      left: 0rem;
+    }
+    @include respond(tab-port) {
+      left: 20rem;
+    }
+    @include respond(tab-land) {
+      position: unset;
     }
   }
 }

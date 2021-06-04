@@ -5,6 +5,9 @@
   transition: all 0.4s;
   &__img {
     position: relative;
+    img{
+      width: 100%;
+    }
     &-layout {
       position: absolute;
       width: 100%;

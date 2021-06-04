@@ -3,17 +3,18 @@
   background-color: $color-green-light;
   margin-top: 7.5rem;
   position: relative;
-
-  @include respond(phone){
-    margin: 0 1rem;
+  text-align: center;
+  @include respond(tab-land) {
+  text-align: unset;
   }
+  
 
   &__leaves-1 {
     position: absolute;
     top: 50%;
     left: 10%;
     transform: translate(-50%, -50%);
-    @include respond(phone){
+    @include respond(phone) {
       top: 0;
       left: 0;
       transform: unset;
@@ -24,9 +25,9 @@
     top: 50%;
     right: 5%;
     transform: translate(-50%, -50%);
-    @include respond(phone){
+    @include respond(phone) {
       // top: 0;
-     right: 0;
+      right: 0;
       transform: unset;
     }
   }
@@ -41,6 +42,11 @@
     }
     &-icon {
       display: flex;
+      justify-content: center;
+      @include respond(tab-land) {
+        justify-content: unset;
+      }
+
       &-1 {
         padding: 0.9rem 1.1rem;
         border-radius: 0.5rem;
@@ -61,10 +67,11 @@
     }
   }
   &__menu {
-    margin-top: 1rem;
-    @include respond(phone){
-     margin-top: 5rem;
+    margin-top: 5rem;
+    @include respond(tab-land) {
+      margin-top: 1rem;
     }
+
     &-list {
       list-style: none;
       margin-top: 4.5rem;
@@ -80,5 +87,3 @@
     }
   }
 }
-
-

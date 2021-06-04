@@ -6,9 +6,10 @@
     transition: all .4s;
     cursor: pointer;
     position: relative;
-    @include respond(phone){
-        margin-top: 2rem;
-      }
+    margin-top: 2rem;
+    @include respond(tab-land){
+        margin-top: unset;
+    }
     &__icon{
         margin-top: 2.5rem;
     }
