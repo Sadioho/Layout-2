@@ -820,7 +820,7 @@ html {
     padding: 2rem 0; }
   .header__nav {
     display: none; }
-    @media only screen and (min-width: 992px) {
+    @media only screen and (min-width: 768px) {
       .header__nav {
         display: block; } }
     .header__nav-item {
@@ -882,7 +882,7 @@ html {
       .header__ab {
         position: unset; } }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 768px) {
   .navigation {
     display: none; } }
 

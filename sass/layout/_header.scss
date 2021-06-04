@@ -13,7 +13,7 @@
 
   &__nav {
     display: none;
-    @include respond(tab-land) {
+    @include respond(tab-port) {
       display: block;
     }
     &-item {
