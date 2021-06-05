@@ -51,6 +51,7 @@
 .browse {
   position: relative;
   text-align: center;
+  overflow: hidden;
   .row {
     @include respond(phone) {
       justify-content: center;
@@ -160,3 +161,98 @@
     right: 15%;
   }
 }
+
+
+
+// //slick 
+// .slick-dots {
+//   // display: flex !important;
+//   display: none !important;
+//   justify-content: space-around;
+//   top: -7rem;
+//   @include respond(tab-port){
+//     display: flex !important;
+//   }
+//   @include respond(tab-land){
+//     display: none !important;
+//   }
+ 
+// }
+// .slick-dots li{
+//   width: 100% !important;
+//   height: 3rem !important;
+//   border-bottom: 3px solid $color-grey-light-1;
+// }
+// .slick-dots li button{
+//   width: 100% !important;
+//   position:  relative !important;
+  
+  
+// }
+// .slick-dots li button::before{
+//   font-family: $font-family-poppins !important;
+//   font-weight: bold !important;
+//   font-size: 1.5rem !important;
+
+
+
+
+// }
+// .slick-dots .slick-active{
+//   border-bottom: .4rem solid $color-yellow;
+// }
+
+
+// .slick-dots .slick-active button::before{
+//   color: $color-yellow !important;
+  
+// }
+// .slick-dots button[role="tab"]::before{
+//   position: absolute !important;
+//   top: 50%;
+//   left: 30%;
+//   transform: translate(-50%,-50%);
+// }
+// button#slick-slide-control00::before{
+//   content: "\0042 \0072 \0065 \0061 \006B \0066 \0061 \0073 \0074" !important;
+
+// }
+
+// button#slick-slide-control01::before{
+//   content: "\004C \0075 \006E \0063 \0068 " !important;
+// }
+
+// button#slick-slide-control02::before{
+//   content: "\0044 \0069 \006E \006E \0065 \0072 " !important;
+// }
+
+// button#slick-slide-control03::before{
+//   content: "\0044 \0065 \0073 \0065 \0072 \0074" !important;
+// }
+
+// button#slick-slide-control04::before{
+//   content: "\0053 \006F \0075 \0070 \0073" !important;
+// }
+
+// button#slick-slide-control05::before{
+//   content: "\0044 \0072 \0069 \006E \006B \0073" !important;
+// }
+
+// .slick-prev{
+//   background-color: violet !important;
+//   width: 5rem !important;
+//   height: 5rem !important;
+//   position: absolute !important;
+//   bottom: 0 !important;
+// }
+// .slick-next{
+//   background-color: violet !important;
+//   width: 5rem !important;
+//   height: 5rem !important;
+//   position: absolute !important;
+//   bottom: 0 !important;
+//   top: -29rem;
+// }
+// .slick-initialized {
+//   position:  relative !important;
+// }
