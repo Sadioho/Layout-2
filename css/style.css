@@ -823,7 +823,7 @@ html {
     transition: all .7s;
     background-color: #F8FBF5; }
   .header .sticky {
-    z-index: 2000;
+    z-index: 200;
     transition: all .7s;
     background-color: #fff; }
   .header__nav {
