@@ -15,10 +15,28 @@ var parallaxInstances4 = new Parallax(scene4);
 var scene5 = document.getElementById("scene-5");
 var parallaxInstances5 = new Parallax(scene5);
 
+var scene6 = document.getElementById("scene-6");
+var parallaxInstances6 = new Parallax(scene6);
 
-// scroll
-// $.addEventListener('scroll', function(){
-//     let header=document.querySelector("#sticky");
-//     window.screenY > 0 ? header.addClass("sticky") : null
-   
-// })
+var scene7 = document.getElementById("scene-7");
+var parallaxInstances7 = new Parallax(scene7);
+
+
+var scene8 = document.getElementById("scene-8");
+var parallaxInstances8 = new Parallax(scene8);
+
+
+var scene9 = document.getElementById("scene-9");
+var parallaxInstances9 = new Parallax(scene9);
+
+
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 10) {
+        $(".header__top").addClass("sticky");
+    }else{
+        $(".header__top").removeClass("sticky");
+
+    }
+}); 

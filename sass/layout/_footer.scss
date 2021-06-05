@@ -5,30 +5,30 @@
   position: relative;
   text-align: center;
   @include respond(tab-land) {
-  text-align: unset;
+    text-align: unset;
   }
-  
 
-  &__leaves-1 {
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    transform: translate(-50%, -50%);
-    @include respond(phone) {
-      top: 0;
-      left: 0;
-      transform: unset;
+  &__leaves {
+    &-1 {
+    display: none;
+      
+      position: absolute;
+      top: 20%;
+      left: 2%;
+      transform: translate(-50%, -50%);
+      @include respond(tab-land){
+        display: block;
+      }
     }
-  }
-  &__leaves-2 {
-    position: absolute;
-    top: 50%;
-    right: 5%;
-    transform: translate(-50%, -50%);
-    @include respond(phone) {
-      // top: 0;
-      right: 0;
-      transform: unset;
+    &-2 {
+    display: none;
+      position: absolute;
+      top: 30%;
+      right: 10%;
+      transform: translate(-50%, -50%);
+      @include respond(tab-land){
+        display: block;
+      }
     }
   }
 
@@ -36,7 +36,7 @@
     &-text {
       margin: 2.8rem 0;
       font-family: $font-family-josefin;
-      font-size: 2.4rem;
+      font-size: 2.3rem;
       line-height: 3.6rem;
       color: $color-grey-light-2;
     }

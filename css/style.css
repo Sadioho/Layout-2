@@ -5,7 +5,8 @@
   padding: 0; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
 
 .heading-1 {
   font-size: 6rem;
@@ -45,7 +46,7 @@ html {
 
 .title-light {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 2.4rem;
+  font-size: 2.3rem;
   color: #636465; }
 
 .text {
@@ -69,8 +70,8 @@ html {
 .padding-gutters-small {
   padding: 2.5rem 0rem; }
 
-.mt-5 {
-  margin-top: 5rem; }
+.mt-13 {
+  margin-top: 13rem; }
 
 .display-inline-block {
   display: inline-block; }
@@ -397,28 +398,27 @@ html {
     .footer {
       text-align: unset; } }
   .footer__leaves-1 {
+    display: none;
     position: absolute;
-    top: 50%;
-    left: 10%;
+    top: 20%;
+    left: 2%;
     transform: translate(-50%, -50%); }
-    @media only screen and (min-width: 576px) {
+    @media only screen and (min-width: 992px) {
       .footer__leaves-1 {
-        top: 0;
-        left: 0;
-        transform: unset; } }
+        display: block; } }
   .footer__leaves-2 {
+    display: none;
     position: absolute;
-    top: 50%;
-    right: 5%;
+    top: 30%;
+    right: 10%;
     transform: translate(-50%, -50%); }
-    @media only screen and (min-width: 576px) {
+    @media only screen and (min-width: 992px) {
       .footer__leaves-2 {
-        right: 0;
-        transform: unset; } }
+        display: block; } }
   .footer__logo-text {
     margin: 2.8rem 0;
     font-family: "Josefin Sans", sans-serif;
-    font-size: 2.4rem;
+    font-size: 2.3rem;
     line-height: 3.6rem;
     color: #636465; }
   .footer__logo-icon {
@@ -471,7 +471,7 @@ html {
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1140px; } }
+    max-width: 1170px; } }
 
 .container-fluid {
   width: 100%;
@@ -815,9 +815,17 @@ html {
 
 .header {
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  background-image: linear-gradient(to bottom, rgba(140, 181, 96, 0.1), rgba(248, 251, 245, 0.2)); }
   .header__top {
-    padding: 2rem 0; }
+    padding: 2rem 0;
+    position: fixed;
+    transition: all .7s;
+    background-color: #F8FBF5; }
+  .header .sticky {
+    z-index: 2000;
+    transition: all .7s;
+    background-color: #fff; }
   .header__nav {
     display: none; }
     @media only screen and (min-width: 768px) {
@@ -869,15 +877,12 @@ html {
           width: 33rem; } }
   .header__ab {
     position: absolute;
-    top: 0;
-    left: -25rem;
+    top: -20rem;
+    left: -40rem;
     z-index: -1; }
-    @media only screen and (min-width: 576px) {
-      .header__ab {
-        left: 0rem; } }
     @media only screen and (min-width: 768px) {
       .header__ab {
-        left: 20rem; } }
+        left: 40rem; } }
     @media only screen and (min-width: 992px) {
       .header__ab {
         position: unset; } }
