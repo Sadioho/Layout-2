@@ -6,7 +6,7 @@
 
   &__text {
     background-color: $color-white;
-    padding: 2.3rem 3.5rem;
+    padding: 2rem 3rem;
     margin-bottom: 1.5rem;
     border-radius: 0.5rem;
     box-shadow: 0px 0px 22px 1px rgba(0,0,0,0.09);
@@ -33,8 +33,10 @@
   &__content {
     display: flex;
     align-items: center;
-    @include respond(phone){
-      justify-content: center;
+    justify-content: center;
+
+    @include respond(tab-land){
+      justify-content: start;
     }
     &-avatar {
       margin-right: 1.5rem;

@@ -3,10 +3,16 @@
 }
 .padding-gutters-small {
   padding: 2.5rem 0rem;
-}
+} 
 // margin
 .mt-13 {
   margin-top: 13rem;
+}
+.mt-5{
+  @include respond(tab-land){
+    margin-top: 5rem;
+
+  }
 }
 
 .display-inline-block {
@@ -33,7 +39,7 @@
 
 .align-self-start {
   align-self: flex-start;
-}
+} 
 
 .align-self-end {
   align-self: flex-end;
