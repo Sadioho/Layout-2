@@ -41,8 +41,7 @@ $(window).scroll(function() {
 
 $(document).ready(function () {
     $('.your-class').slick({
-      infinite: true,
-      speed: 300,
+      speed: 600,
       centerMode: true,
       variableWidth: true,
       navigation:true,
