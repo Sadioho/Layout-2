@@ -170,7 +170,7 @@
     flex-direction: column;
     justify-content: start;
     width: 100px !important;
-    left: -28rem;
+    left: -25rem; 
     top: 0;
   }
 }
@@ -204,6 +204,7 @@
 .slick-dots .slick-active button::before {
   color: $color-yellow !important;
 }
+
 .slick-dots button[role="tab"]::before {
   position: absolute !important;
   top: 50%;
@@ -211,27 +212,27 @@
   transform: translate(-50%, -50%);
 }
 button#slick-slide-control00::before {
-  content: "\0042 \0072 \0065 \0061 \006B \0066 \0061 \0073 \0074" !important;
+  content: "Breakfast" !important;
 }
 
 button#slick-slide-control01::before {
-  content: "\004C \0075 \006E \0063 \0068 " !important;
+  content: "Lunch" !important;
 }
 
 button#slick-slide-control02::before {
-  content: "\0044 \0069 \006E \006E \0065 \0072 " !important;
+  content: "Dinner " !important;
 }
 
 button#slick-slide-control03::before {
-  content: "\0044 \0065 \0073 \0065 \0072 \0074" !important;
+  content: "Desert" !important;
 }
 
 button#slick-slide-control04::before {
-  content: "\0053 \006F \0075 \0070 \0073" !important;
+  content: "Soups" !important;
 }
 
 button#slick-slide-control05::before {
-  content: "\0044 \0072 \0069 \006E \006B \0073" !important;
+  content: "Drinks" !important;
 }
 
 .slick-button {
