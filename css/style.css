@@ -89,9 +89,6 @@ html {
 .justify-content-center {
   justify-content: center; }
 
-.jus-sb {
-  justify-content: space-between; }
-
 .text-center {
   text-align: center; }
 
@@ -168,8 +165,8 @@ html {
         height: 40px;
         background-color: #fff;
         position: relative;
-        border-radius: .5rem;
-        transition: all .6s;
+        border-radius: 0.5rem;
+        transition: all 0.6s;
         cursor: pointer; }
         .browse-card__img-item-1:hover, .browse-card__img-item-2:hover {
           background-color: #59882B;
@@ -252,7 +249,7 @@ html {
           border-bottom: unset; } }
 
 .btn {
-  background: linear-gradient(90deg, #8cb560 0%, #639d2b 100%);
+  background: linear-gradient(90deg, #8CB560 0%, #59882B 100%);
   font-family: "Poppins", sans-serif;
   font-size: 1.5rem;
   font-weight: 500;
@@ -300,8 +297,8 @@ html {
 .card {
   padding: 2rem;
   background-color: #F8FBF5;
-  border-radius: .5rem;
-  transition: all .4s;
+  border-radius: 0.5rem;
+  transition: all 0.4s;
   cursor: pointer;
   position: relative;
   margin-top: 2rem; }
@@ -320,10 +317,10 @@ html {
     left: 0;
     z-index: 20;
     background-color: #59882B;
-    border-bottom-left-radius: .5rem;
-    border-bottom-right-radius: .5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
     opacity: 0;
-    transition: opacity .4s; }
+    transition: opacity 0.4s; }
   .card:hover {
     background-color: #fff;
     box-shadow: 0px 0px 22px 1px rgba(0, 0, 0, 0.05); }
@@ -345,7 +342,7 @@ html {
       color: #b7b7b7; }
   .sub-form__form-btn {
     text-align: center;
-    background: linear-gradient(180deg, #8cb560 0%, #639d2b 100%);
+    background: linear-gradient(180deg, #8CB560 0%, #59882B 100%);
     border: none;
     border-radius: 50%;
     outline: none;
@@ -356,7 +353,7 @@ html {
     transform: translate(-50%, -50%);
     cursor: pointer; }
     .sub-form__form-btn:hover {
-      opacity: .5; }
+      opacity: 0.5; }
 
 .testimonial-card {
   text-align: start;
@@ -499,15 +496,6 @@ html {
   margin-right: -15px;
   margin-left: -15px; }
 
-.no-gutters {
-  margin-right: 0;
-  margin-left: 0; }
-
-.no-gutters > .col,
-.no-gutters > [class*="col-"] {
-  padding-right: 0;
-  padding-left: 0; }
-
 .col-1,
 .col-2,
 .col-3,
@@ -520,8 +508,6 @@ html {
 .col-10,
 .col-11,
 .col-12,
-.col,
-.col-auto,
 .col-sm-1,
 .col-sm-2,
 .col-sm-3,
@@ -534,8 +520,6 @@ html {
 .col-sm-10,
 .col-sm-11,
 .col-sm-12,
-.col-sm,
-.col-sm-auto,
 .col-md-1,
 .col-md-2,
 .col-md-3,
@@ -548,8 +532,6 @@ html {
 .col-md-10,
 .col-md-11,
 .col-md-12,
-.col-md,
-.col-md-auto,
 .col-lg-1,
 .col-lg-2,
 .col-lg-3,
@@ -562,8 +544,6 @@ html {
 .col-lg-10,
 .col-lg-11,
 .col-lg-12,
-.col-lg,
-.col-lg-auto,
 .col-xl-1,
 .col-xl-2,
 .col-xl-3,
@@ -575,24 +555,12 @@ html {
 .col-xl-9,
 .col-xl-10,
 .col-xl-11,
-.col-xl-12,
-.col-xl,
-.col-xl-auto {
+.col-xl-12 {
   position: relative;
   width: 100%;
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px; }
-
-.col {
-  flex-basis: 0;
-  flex-grow: 1;
-  max-width: 100%; }
-
-.col-auto {
-  flex: 0 0 auto;
-  width: auto;
-  max-width: none; }
 
 .col-1 {
   flex: 0 0 8.333333%;
@@ -643,14 +611,6 @@ html {
   max-width: 100%; }
 
 @media (min-width: 576px) {
-  .col-sm {
-    flex-basis: 0;
-    flex-grow: 1;
-    max-width: 100%; }
-  .col-sm-auto {
-    flex: 0 0 auto;
-    width: auto;
-    max-width: none; }
   .col-sm-1 {
     flex: 0 0 8.333333%;
     max-width: 8.333333%; }
@@ -689,14 +649,6 @@ html {
     max-width: 100%; } }
 
 @media (min-width: 768px) {
-  .col-md {
-    flex-basis: 0;
-    flex-grow: 1;
-    max-width: 100%; }
-  .col-md-auto {
-    flex: 0 0 auto;
-    width: auto;
-    max-width: none; }
   .col-md-1 {
     flex: 0 0 8.333333%;
     max-width: 8.333333%; }
@@ -735,14 +687,6 @@ html {
     max-width: 100%; } }
 
 @media (min-width: 992px) {
-  .col-lg {
-    flex-basis: 0;
-    flex-grow: 1;
-    max-width: 100%; }
-  .col-lg-auto {
-    flex: 0 0 auto;
-    width: auto;
-    max-width: none; }
   .col-lg-1 {
     flex: 0 0 8.333333%;
     max-width: 8.333333%; }
@@ -781,14 +725,6 @@ html {
     max-width: 100%; } }
 
 @media (min-width: 1200px) {
-  .col-xl {
-    flex-basis: 0;
-    flex-grow: 1;
-    max-width: 100%; }
-  .col-xl-auto {
-    flex: 0 0 auto;
-    width: auto;
-    max-width: none; }
   .col-xl-1 {
     flex: 0 0 8.333333%;
     max-width: 8.333333%; }
@@ -1161,7 +1097,8 @@ html {
 .slick-dots {
   display: none !important;
   justify-content: space-around;
-  top: -7rem; }
+  top: -7rem;
+  bottom: unset !important; }
   @media only screen and (min-width: 768px) {
     .slick-dots {
       display: flex !important; } }

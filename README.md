@@ -1,10 +1,4 @@
 
-
-
-
-margin trên dưới 150px
-
-
 header 
     container
         row
@@ -12,6 +6,7 @@ header
                 logo
             col
                 nav
+    container
         row
             col
                 content
@@ -45,6 +40,7 @@ Browse
             col
             col 
             col
+        row
         
 History of figo
     container

@@ -1,5 +1,5 @@
 .btn{
-    background:  linear-gradient(90deg, rgba(140,181,96,1) 0%, rgba(99,157,43,1) 100%);
+    background:  linear-gradient(90deg, $color-green 0%, $color-green-dark 100%);
     font-family: $font-family-poppins;
     font-size: 1.5rem;
     font-weight: 500; 
